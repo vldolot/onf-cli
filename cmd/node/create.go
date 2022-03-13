@@ -16,7 +16,7 @@ func createCmd() *cobra.Command {
 	watcherFlags := watcher.NewWatcherFlags()
 	printFlags := printer.NewPrintFlags()
 	c := &cobra.Command{
-		Use:   "create (-f FILENAME)",
+		Use:   "create (-f FILENAME) ",
 		Short: "Create a new dedicated node",
 		Run: func(cmd *cobra.Command, args []string) {
 			wsID, err := helpers.GetWorkspaceID(cmd)
